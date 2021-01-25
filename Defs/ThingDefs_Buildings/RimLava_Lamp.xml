@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="StandingLampBase">
+    <defName>GGRLL_LavaLamp</defName>
+    <label>Lava lamp</label>
+    <description>My first lamp</description>
+    <designatorDropdown>StandingLampColored</designatorDropdown>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(163, 20, 31,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

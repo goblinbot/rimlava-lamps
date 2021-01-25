@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimLava Lamps</name>
+  <author>GGbot</author>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+
+  <description>First mod - a test!</description>
+</ModMetaData>
