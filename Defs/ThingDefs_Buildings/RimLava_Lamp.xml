@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="StandingLampBase">
-    <defName>GGRLL_LavaLamp</defName>
-    <label>Lava lamp</label>
-    <description>My first lamp</description>
-    <designatorDropdown>StandingLampColored</designatorDropdown>
+  <ThingDef name="LavaLampBase" Abstract="true" ParentName="StandingLampBase">
+    <designatorDropdown>LavaLamps</designatorDropdown>
+    <description>My first-and-a-half lamp</description>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12</glowRadius>
-        <glowColor>(163, 20, 31,0)</glowColor>
+        <glowColor>(255, 255, 255,0)</glowColor>
       </li>
     </comps>
     <researchPrerequisites>
       <li>ColoredLights</li>
     </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LavaLampBase">
+    <defName>GGRLL_LavaLamp_Red</defName>
+    <label>Lava lamp (red)</label>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowColor>(163, 20, 31,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LavaLampBase">
+    <defName>GGRLL_LavaLamp_Yellow</defName>
+    <label>Lava lamp (yellow)</label>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowColor>(249, 222, 86,0)</glowColor>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>
