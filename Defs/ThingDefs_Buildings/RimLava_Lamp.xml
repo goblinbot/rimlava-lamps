@@ -8,7 +8,17 @@
 	    <isEdifice>false</isEdifice>
       <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
     </building>
-    <comps>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>350</WorkToBuild>
+    </statBases>
+
+    <comps Inherit="false">
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+      </li>
       <li Class="CompProperties_Glower">
         <glowRadius>12</glowRadius>
         <glowColor>(255, 255, 255,0)</glowColor>
@@ -18,7 +28,8 @@
         <heatPerSecond>1.5</heatPerSecond>
       </li>
     </comps>
-    <researchPrerequisites>
+
+    <researchPrerequisites Inherit="false">
       <li>ColoredLights</li>
     </researchPrerequisites>
   </ThingDef>
@@ -28,6 +39,7 @@
     <label>Lava lamp (red)</label>
     <comps>
       <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
         <glowColor>(163, 20, 31,0)</glowColor>
       </li>
     </comps>
@@ -38,6 +50,7 @@
     <label>Lava lamp (yellow)</label>
     <comps>
       <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
         <glowColor>(249, 222, 86,0)</glowColor>
       </li>
     </comps>
