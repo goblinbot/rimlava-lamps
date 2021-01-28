@@ -3,6 +3,11 @@
   <ThingDef Name="LavaLampBase" Abstract="true" ParentName="StandingLampBase">
     <designatorDropdown>Lava_Lamps</designatorDropdown>
     <description>My first-and-a-half lamp. Generates a tiny bit of heat.</description>
+
+    <graphicData>
+      <texPath>RLL/Things/Building/LavaLampPY</texPath>
+    </graphicData>
+
     <altitudeLayer>BuildingOnTop</altitudeLayer>
     <building>
 	    <isEdifice>false</isEdifice>
@@ -18,10 +23,6 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>40</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>12</glowRadius>
-        <glowColor>(255, 255, 255,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
