@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef name="LavaLampBase" Abstract="true" ParentName="StandingLampBase">
-    <designatorDropdown>LavaLamps</designatorDropdown>
-    <description>My first-and-a-half lamp</description>
+  <ThingDef Name="LavaLampBase" Abstract="true" ParentName="StandingLampBase">
+    <designatorDropdown>Lava_Lamps</designatorDropdown>
+    <description>My first-and-a-half lamp. Generates a tiny bit of heat.</description>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <building>
+	    <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12</glowRadius>
         <glowColor>(255, 255, 255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1.5</heatPerSecond>
       </li>
     </comps>
     <researchPrerequisites>
